@@ -6,7 +6,7 @@ import * as article13Actions from "actions/article13_actions"
 // define initial state of model
 export const article13InitialState = {
   algorithmAccuracy: 97.5,
-  illegalRate: .0001,
+  illegalRate: 10000,
 }
 
 function article13(state = article13InitialState, action){
