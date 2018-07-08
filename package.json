@@ -11,6 +11,9 @@
     "precommit": "lint-staged",
     "heroku-postbuild": "npm run webpack --config webpack.prod.js --colors; npm run webpack --config webpack.server.js --colors"
   },
+  "engines": {
+    "npm": "6.1.0"
+  },
   "jest": {
     "modulePaths": [
       "src"
