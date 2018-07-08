@@ -4,7 +4,7 @@ import express from "express"
 import sslRedirect from "heroku-ssl-redirect"
 
 import htmlTemplate from "./html_template"
-import BoilerplateReduxRoot from "../src/components/boilerplate_redux_root"
+import Article13ReduxRoot from "../src/components/article13_redux_root"
 
 const server = express()
 
@@ -15,7 +15,7 @@ server.use(express.static("dist"))
 
 server.get("/", (req, res) => {
   ReactDOMServer.renderToNodeStream(
-        htmlTemplate(React.createElement(BoilerplateReduxRoot))
+        htmlTemplate(React.createElement(Article13ReduxRoot))
     ).pipe(res)
 })
 

@@ -1,5 +1,5 @@
 import React from "react"; //eslint-disable-line
 import ReactDOM from "react-dom"
-import BoilerplateReduxRoot from "components/boilerplate_redux_root"
+import Article13ReduxRoot from "components/article13_redux_root"
 
-ReactDOM.hydrate(<BoilerplateReduxRoot/>, document.getElementById("app"))
+ReactDOM.hydrate(<Article13ReduxRoot/>, document.getElementById("app"))

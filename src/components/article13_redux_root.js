@@ -9,19 +9,19 @@ import thunkMiddleware from "redux-thunk"
 
 import rootReducers from "reducers/root_reducers"
 
-import BoilerplateContainer from "containers/boilerplate_container"
+import Article13Container from "containers/article13_container"
 
 let store
 let composeEnhancers
 
-class BoilerplateReduxRoot extends React.Component{
+class Article13ReduxRoot extends React.Component{
 
   componentWillMount(){
     // setting dev tools up per question - until we redo the job_batch/job flow in react
     composeEnhancers =
       typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
         window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-          name: "boilerplate"
+          name: "article13"
         }) : compose
 
     const enhancer = composeEnhancers(
@@ -36,11 +36,11 @@ class BoilerplateReduxRoot extends React.Component{
   render() {
     return(
       <Provider store={store}>
-        <BoilerplateContainer />
+        <Article13Container />
       </Provider>
     )
   }
 
 }
 
-export default BoilerplateReduxRoot
+export default Article13ReduxRoot

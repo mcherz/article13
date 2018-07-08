@@ -1,9 +1,9 @@
 import { combineReducers } from "redux"
 
-import boilerplate from "reducers/boilerplate_reducers"
+import article13 from "reducers/article13_reducer"
 
 const rootReducers = combineReducers({
-  boilerplate
+  article13
 })
 
 export default rootReducers
