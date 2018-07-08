@@ -3,7 +3,7 @@ import React from "react"
 const htmlTemplate = (html) => {
   return <html>
     <head>
-      <title>Matt Herz</title>
+      <title>Article 13</title>
       <link rel="stylesheet" type="text/css" href="styles.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
