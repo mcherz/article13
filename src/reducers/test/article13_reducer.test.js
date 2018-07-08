@@ -10,7 +10,7 @@ describe("Article13 Reducer tests", () => {
       ).toEqual(article13InitialState)
   })
 
-  it("should set the algo accuracy string into state", () => {
+  it("should set the algo accuracy into state", () => {
     const state = {
       algorithmAccuracy: 97.5
     }
@@ -20,6 +20,21 @@ describe("Article13 Reducer tests", () => {
     }
     const newState = {
       algorithmAccuracy: 90
+    }
+    expect(reducer(state, action)).toEqual(newState)
+    expect(reducer(state, action)).not.toBe(newState)
+  })
+
+  it("should set the illegal meme rate into state", () => {
+    const state = {
+      illegalRate: .0001
+    }
+    const action = {
+      type: types.SET_ILLEGAL_MEME_RATE,
+      payload: .001
+    }
+    const newState = {
+      illegalRate: .001
     }
     expect(reducer(state, action)).toEqual(newState)
     expect(reducer(state, action)).not.toBe(newState)

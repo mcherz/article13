@@ -5,3 +5,11 @@ export const setAlgorithmAccuracy = (accuracy) => {
     payload: accuracy
   }
 }
+
+export const SET_ILLEGAL_MEME_RATE = "SET_ILLEGAL_MEME_RATE"
+export const setIllegalMemeRate = (rate) => {
+  return {
+    type: SET_ILLEGAL_MEME_RATE,
+    payload: rate
+  }
+}

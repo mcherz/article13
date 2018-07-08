@@ -10,4 +10,13 @@ describe("Article13 Actions", () => {
     }
     expect(actions.setAlgorithmAccuracy(90)).toEqual(expectedAction)
   })
+
+  it("should create an action to set the illegal rate.", () => {
+    const rate = .001
+    const expectedAction = {
+      type: actions.SET_ILLEGAL_MEME_RATE,
+      payload: rate
+    }
+    expect(actions.setIllegalMemeRate(.001)).toEqual(expectedAction)
+  })
 })
