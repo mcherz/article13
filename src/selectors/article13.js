@@ -20,13 +20,13 @@ export const rate = createSelector(
     25 - Math.log10(illegalRate) ** 2
 )
 
-export const truePositive = createSelector(
+export const trueNegative = createSelector(
   [algorithmAccuracy, illegalRate],
   (algorithmAccuracy, illegalRate) =>
     10000000 * (1 - 1/illegalRate) * algorithmAccuracy/100
 )
 
-export const trueNegative = createSelector(
+export const truePositive = createSelector(
   [algorithmAccuracy, illegalRate],
   (algorithmAccuracy, illegalRate) =>
   10000000 * (1/illegalRate) * algorithmAccuracy/100

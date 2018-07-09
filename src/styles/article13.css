@@ -3,3 +3,47 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.article13 {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto
+}
+
+.slider {
+  margin-bottom: 20px;
+}
+
+.bar-container {
+  width: 100%;
+  display: flex;
+}
+
+.bar {
+  flex: 1 1 25%;
+  padding: 5px;
+}
+
+.bar-label {
+  height: 60px;
+}
+
+.area-blue {
+  background-color: lightblue;
+  border: 1px solid #9999dd
+}
+
+.area-green {
+  background-color: lightgreen;
+  border: 1px solid #44ff44;
+}
+
+.area-red {
+  background-color: indianred;
+  border: 1px solid #ff4444;
+}
+
+.area-grey {
+  background-color:#cccccc;
+  border: 1px solid #888888;
+}

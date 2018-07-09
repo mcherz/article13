@@ -10,7 +10,7 @@ describe("Article13 Reducer tests", () => {
       ).toEqual(article13InitialState)
   })
 
-  it("should set the algo accuracy into state", () => {
+  xit("should set the algo accuracy into state", () => {
     const state = {
       algorithmAccuracy: 97.5
     }
@@ -25,7 +25,7 @@ describe("Article13 Reducer tests", () => {
     expect(reducer(state, action)).not.toBe(newState)
   })
 
-  it("should set the illegal meme rate into state", () => {
+  xit("should set the illegal meme rate into state", () => {
     const state = {
       illegalRate: .0001
     }
