@@ -12,9 +12,9 @@ export const article13InitialState = {
 function article13(state = article13InitialState, action){
   switch(action.type){
     case article13Actions.SET_ALGORITHM_ACCURACY:
-      return dotProp.set(state, "algorithmAccuracy", action.payload)
+      return dotProp.set(state, "algorithmAccuracy", 100 * Math.log(action.payload) / Math.log(100))
     case article13Actions.SET_ILLEGAL_MEME_RATE:
-      return dotProp.set(state, "illegalRate", action.payload)
+      return dotProp.set(state, "illegalRate", 10 ** Math.sqrt(25 - action.payload))
     default:
       return state
   }
